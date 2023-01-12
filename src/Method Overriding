@@ -1,0 +1,15 @@
+class A:
+  def meth(self):
+      return "Invoking method from class A"
+      
+class B(A):
+      pass
+      
+      obj=B();
+      print(obj.meth())
+      
+class B(A):
+  def meth(self):
+      return "Method is overridden in extended class B"
+   
+   print(obj.meth())
